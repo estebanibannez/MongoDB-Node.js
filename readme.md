@@ -67,3 +67,6 @@ db.productos.insert([
 ```
 ## 4.- Proyecto con Swagger / URL para revisar los endpoints 🛠️
 http://localhost:8080/api-docs/
+```
+npm run dev
+```
