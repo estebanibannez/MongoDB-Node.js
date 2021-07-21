@@ -44,8 +44,7 @@ app.use((err, req, res, next) => {
     console.error(err.message);
     return res.status(500).send('Algo se rompio!');
 });
-
-
+app.use('/', express.static(__dirname + '/public'));
 app.use('/api', require('./routes/messages'));
 app.use('/api', require('./routes/products'));
 

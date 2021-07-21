@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos Faker.js</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="cover.css" rel="stylesheet">
+
+  
+</head>
+
+<body class="text-center">
+
+    <div class="d-flex h-100 p-3 mx-auto flex-column">
+        <header class="masthead mb-auto">
+            <div class="inner">
+                <h3 class="masthead-brand">Desafio Faker js</h3>
+                <nav class="nav nav-masthead justify-content-center">
+                    <!-- <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Contact</a> -->
+                </nav>
+            </div>
+        </header>
+
+        <main role="main" class="inner cover">
+             <div>
+                <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col"># ID</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Descripción</th>
+                        <th scope="col">Código</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Foto</th>
+                        <th scope="col">Stock</th>
+                      </tr>
+                    </thead>
+                    <tbody id="registros">
+                     
+                 
+                    </tbody>
+                  </table>
+             </div>
+
+             <p class="lead">
+                <input type="number" max="30" min="0" class="form-control mb-3" placeholder="Indique cantidad a buscar" id="cantidad"> 
+
+                <button type="button" href="#" id="buscar" class="btn btn-lg btn-secondary">Generar productos</button>
+              </p>
+        </main>
+
+        <footer class="mastfoot mt-auto">
+            <div class="inner">
+                <p>By Esteban Ibañez <a href="https://getbootstrap.com/">Coderhouse</a>, by <a
+                        href="https://twitter.com/">@ibanez</a>.</p>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+        ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

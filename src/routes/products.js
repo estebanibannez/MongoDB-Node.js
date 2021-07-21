@@ -270,4 +270,28 @@ router.delete("/productos/:id", async (req, res) => {
   }
 });
 
+router.post("/productos/vista-test/:cant?", async (req, res) => {
+  console.log('llega a back', req.params.cant);
+  try {
+    let result = await controller.findAllFakerData(req.params.cant);
+    if (result != null) {
+      return res.json({
+        mensaje: "Registros encontrados éxitosamente",
+        status: 200,
+        data: result,
+      });
+    } else {
+      return res.json({
+        mensaje: "No éxisten datos.",
+        status: 404,
+        data: result,
+      });
+    }
+  } catch (error) {
+    return res.status(500).send({ error: error.message });
+  }
+});
+
+
+
 module.exports = router;
