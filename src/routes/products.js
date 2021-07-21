@@ -270,7 +270,7 @@ router.delete("/productos/:id", async (req, res) => {
   }
 });
 
-router.post("/productos/vista-test/:cant?", async (req, res) => {
+router.get("/productos/vista-test/:cant?", async (req, res) => {
   console.log('llega a back', req.params.cant);
   try {
     let result = await controller.findAllFakerData(req.params.cant);
