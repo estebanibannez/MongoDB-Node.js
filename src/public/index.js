@@ -11,7 +11,7 @@ boton.addEventListener("click", (event) => {
     headers: {
       "Content-Type": "application/json",
     },
-    method: "POST",
+    method: "GET",
     // body: JSON.stringify("A"),
     // body: JSON.stringify(parseInt(cantidad.value)),
   })
