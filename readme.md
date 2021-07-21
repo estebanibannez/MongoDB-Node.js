@@ -1,16 +1,20 @@
-### Base de datos del proyecto
+## Base de datos del proyecto 📄📋
 Este sistema utiliza la base de datos mongodb. Para crearla se debe realizar lo siguiente, con el comando mongo:
 
-1.-
-### crear bd ecommerce
+
+## 1.- Crear bd ecommerce
+```
  use ecommerce
-2.-
-### crear colecciones producto y mensaje
+```
+### 2.- Crear colecciones producto y mensaje
+```
 db.createCollection("mensajes");
 db.createCollection("productos");
+```
 
-3.-
-### insertar documentos a coleccion mensajes
+
+## 3.- Insertar documentos a coleccion mensajes
+```
 db.mensajes.insert([
   {
     autor: "Soporte",
@@ -31,7 +35,9 @@ db.mensajes.insert([
     timestamp: new Date(),
   },
 ]);
-### insertar documentos a coleccion productos
+```
+## Insertar documentos a coleccion productos
+```
 db.productos.insert([
   {
     nombre: "Producto test 1",
@@ -58,6 +64,9 @@ db.productos.insert([
     stock: 30
   },
 ]);
-
-### Proyecto con Swagger / URL para revisar los endpoints
+```
+## 4.- Proyecto con Swagger / URL para revisar los endpoints 🛠️
 http://localhost:8080/api-docs/
+```
+npm run dev
+```
